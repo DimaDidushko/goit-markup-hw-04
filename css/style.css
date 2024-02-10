@@ -176,8 +176,11 @@ ol {
 .hero {
   margin: 0 auto;
   background-color: #2f303a;
-  background-image: url(../images/bg_hero.png),
-    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg_hero.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -551,6 +554,7 @@ ol {
   border-radius: 4px;
   padding: 6px 22px;
   cursor: pointer;
+  border: none;
 }
 
 .btn-portfolio:focus,
@@ -561,6 +565,8 @@ ol {
   background-color: var(--color-blue);
   cursor: pointer;
   border-radius: 4px;
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-title-hh {
@@ -588,6 +594,16 @@ ol {
   flex-wrap: wrap;
   align-items: center;
   gap: 30px;
+}
+
+.portfolio-card {
+  border: none;
+}
+
+.portfolio-card:focus,
+.portfolio-card:hover {
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-item {

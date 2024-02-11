@@ -187,6 +187,7 @@ ol {
   text-align: center;
   padding-bottom: 200px;
   padding-top: 200px;
+  max-width: 1600px;
 }
 
 .content .btn-portfolio.current {
@@ -596,16 +597,6 @@ ol {
   gap: 30px;
 }
 
-.portfolio-card {
-  border: none;
-}
-
-.portfolio-card:focus,
-.portfolio-card:hover {
-  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
-    0 1px 1px 0 rgba(0, 0, 0, 0.12);
-}
-
 .portfolio-item {
   margin-right: 8px;
 }
@@ -618,4 +609,14 @@ ol {
   border: 1px solid #f5f4fa;
   border-top: none;
   padding: 20px 24px;
+}
+
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:focus,
+.portfolio-link:hover {
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
